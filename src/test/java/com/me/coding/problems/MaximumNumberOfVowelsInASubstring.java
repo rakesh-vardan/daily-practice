@@ -44,12 +44,6 @@ public class MaximumNumberOfVowelsInASubstring {
         return countOfVowels;
     }
 
-    private boolean isVowel(char ch) {
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
-            return true;
-        return false;
-    }
-
     /**
      * Solution-2: Using the sliding window method to get a better runtime solution
      * - O(n)
@@ -86,6 +80,12 @@ public class MaximumNumberOfVowelsInASubstring {
             maxVowels = Math.max(maxVowels, countOfVowels);
         }
         return maxVowels;
+    }
+
+    private boolean isVowel(char ch) {
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+            return true;
+        return false;
     }
 
     @Test

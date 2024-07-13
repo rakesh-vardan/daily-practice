@@ -11,11 +11,12 @@ public class ViolationsExample {
         this.hobbies = new ArrayList<String>();
     }
 
-    public void addHobby(String hobby) {
+    public void addhobby(String hobby) {
         hobbies.add(hobby);
     }
 
-    public void printHobbies() {
+    public void printhobbies() {
+        // dummy comment
         for (int i = 0; i < hobbies.size(); i++) {
             System.out.println(hobbies.get(i));
         }
@@ -25,6 +26,6 @@ public class ViolationsExample {
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
         System.out.println("Hobbies: ");
-        printHobbies();
+        printhobbies();
     }
 }
